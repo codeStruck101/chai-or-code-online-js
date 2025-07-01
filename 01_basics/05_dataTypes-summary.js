@@ -37,3 +37,25 @@ const foo = function()
 }
 
 console.log(typeof anotherId); //symbol
+
+
+//======================================================
+
+//stack(Primitive)-> copy,Heap(Non-Primitive) -> reference
+
+let myYoutubeName = "successIsNear2025";
+let anotherName = myYoutubeName;
+anotherName = "chaiAurCode";
+console.log(anotherName); //chaiAurCode
+console.log(myYoutubeName); //successIsNear2025
+
+let user = {
+    email : "anjananeelayath@gnailcom",
+    id : 564636,
+}
+
+let userTwo  = user;
+userTwo.email = "anjana@google.com";
+console.log(user.email); //anjana@gmail.com
+console.log(userTwo.email); //anjana@gmail.com
+
